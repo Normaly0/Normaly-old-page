@@ -15,7 +15,7 @@ body {
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: "https://raw.githubusercontent.com/Normalyman/Normalyman.github.io/main/Background%202.0.png";
+  background-image: url(https://raw.githubusercontent.com/Normalyman/Normalyman.github.io/main/Background%202.0.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
