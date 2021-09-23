@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@font-face {
+  font-family: 'Huberfish';
+  src: url("https://github.com/Normaly0/Normaly0.github.io/blob/main/Huberfish_a_v003-Regular.ttf?raw=true") format("truetype");
+}
+
 :root {
   --bree: 'Bree Serif', serif;
   --lato: 'Lato', sans-serif;
@@ -63,12 +68,12 @@ header a {
 .logo {
   font-size: 1.8rem;
   margin: 5px 20px;
-  font-family: var(--mono);
+  font-family: 'Huberfish';
 }
 
 .title {
   text-align: center;
-  font-family: var(--bree);
+  font-family: '';
   font-size: 1.7rem;
   margin-top: 85px;
 }
