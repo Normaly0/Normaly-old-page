@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 :root {
   --bree: 'Bree Serif', serif;
-  --raleway: 'Raleway', sans-serif;
+  --lato: 'Lato', sans-serif;
+  --mono: 'Monoton', serif;
 }
 
 html {
@@ -21,8 +23,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
-  font-size: 20px;
-  font-family: var(--raleway);
+  font-size: 21px;
+  font-family: var(--lato);
 }
 
 .container {
@@ -34,10 +36,15 @@ body {
 
 header {
   background: #918EF5;
+  -webkit-box-shadow: 4px 3px 5px black;
+          box-shadow: 4px 3px 5px black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  top: 0;
   height: 50px;
+  width: 100%;
 }
 
 header nav {
@@ -50,13 +57,20 @@ header a {
   color: white;
   font-size: 1.8rem;
   font-family: var(--bree);
-  margin-left: 20px;
+  margin: 0 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  margin: 5px 20px;
+  font-family: var(--mono);
 }
 
 .title {
   text-align: center;
   font-family: var(--bree);
   font-size: 1.7rem;
+  margin-top: 85px;
 }
 
 .sub-title {
@@ -69,6 +83,7 @@ header a {
 .status {
   color: red;
   font-style: italic;
+  text-shadow: 3px 2px 5px black;
 }
 
 .about-section {
@@ -167,8 +182,11 @@ header a {
 
 .work-section {
   background: rgba(146, 142, 245, 0.6);
+  -webkit-box-shadow: 4px 3px 5px black;
+          box-shadow: 4px 3px 5px black;
   border-radius: 10px;
   margin: 0 auto 45px auto;
+  padding-top: 1px;
   width: 1600px;
 }
 
@@ -185,7 +203,9 @@ header a {
 }
 
 .flex-box-showcase {
-  background: grey;
+  background: rgba(228, 133, 244, 0.6);
+  -webkit-box-shadow: 4px 3px 5px black;
+          box-shadow: 4px 3px 5px black;
   width: 30%;
   text-align: center;
 }
@@ -196,7 +216,12 @@ header a {
 
 .pricing-section {
   background: rgba(146, 142, 245, 0.6);
+  -webkit-box-shadow: 4px 3px 5px black;
+          box-shadow: 4px 3px 5px black;
   border-radius: 10px;
+  width: 1000px;
+  margin: 0 auto 45px auto;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,8 +230,13 @@ header a {
   text-align: center;
 }
 
+.pricing-section p {
+  font-size: 1.1em;
+}
+
 .pricing-section-title {
   width: 100%;
+  font-size: 1.1em;
 }
 
 .pricing-section-retexture {
@@ -219,6 +249,35 @@ header a {
 
 .pricing-section-disclaimer {
   width: 100%;
+  border-top: 2px solid rgba(228, 133, 244, 0.6);
+}
+
+.border-right {
+  position: relative;
+}
+
+.border-right:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: rgba(228, 133, 244, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.border-left {
+  position: relative;
+}
+
+.border-left:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: rgba(228, 133, 244, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 footer {
@@ -229,5 +288,6 @@ footer {
 
 footer p {
   margin-bottom: 0;
+  line-height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
