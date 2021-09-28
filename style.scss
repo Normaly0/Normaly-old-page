@@ -90,7 +90,7 @@ header {
 
 .title {
     text-align: center;
-    font-family: '';
+    font-family: var(--bree);
     font-size: 1.7rem;
     margin-top: 85px;
 }
@@ -261,15 +261,26 @@ header {
         font-size: 1.1em;
     }
     &-retexture {
-        width: 50%;
+        width: 100%;
+        display: inherit;
+        flex-wrap: inherit;
         }
     
     &-modeling {
-        width: 50%;
+        width: 100%;
+        display: inherit;
+        flex-wrap: inherit;
     }
     &-disclaimer {
         width: 100%;
-        border-top: 2px solid rgba(228, 133, 244, 0.6);;
+    }
+}
+
+.pricing-details {
+    width: 33.33%;
+
+    &-title {
+        width: 100%;
     }
 }
 
@@ -284,7 +295,7 @@ header {
 .border-right {
     position: relative;
 
-    &:after {
+    &:before {
         content: '';
         width: 1px;
         height: 100%;

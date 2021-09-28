@@ -97,7 +97,7 @@ header a {
 
 .title {
   text-align: center;
-  font-family: '';
+  font-family: var(--bree);
   font-size: 1.7rem;
   margin-top: 85px;
 }
@@ -297,16 +297,29 @@ header a {
 }
 
 .pricing-section-retexture {
-  width: 50%;
+  width: 100%;
+  display: inherit;
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
 }
 
 .pricing-section-modeling {
-  width: 50%;
+  width: 100%;
+  display: inherit;
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
 }
 
 .pricing-section-disclaimer {
   width: 100%;
-  border-top: 2px solid rgba(228, 133, 244, 0.6);
+}
+
+.pricing-details {
+  width: 33.33%;
+}
+
+.pricing-details-title {
+  width: 100%;
 }
 
 @media (max-width: 1439px) {
@@ -319,7 +332,7 @@ header a {
   position: relative;
 }
 
-.border-right:after {
+.border-right:before {
   content: '';
   width: 1px;
   height: 100%;
