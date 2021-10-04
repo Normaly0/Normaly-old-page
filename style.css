@@ -110,7 +110,7 @@ header a {
 }
 
 .status {
-  color: red;
+  color: #15df15;
   font-style: italic;
   text-shadow: 3px 2px 5px black;
 }
