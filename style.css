@@ -85,7 +85,7 @@ header a {
 }
 
 .underline:hover {
-  cursor: pointer;
+  cursor: hand;
 }
 
 .underline:hover::before {
