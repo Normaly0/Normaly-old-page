@@ -16,6 +16,7 @@
      width: 100%;
      box-sizing: border-box;
      display: block;
+     scroll-behavior: smooth;
  }
 
 body {
@@ -76,10 +77,6 @@ header {
         background: white;
         transition: height 0.1s ease-out;
     }
-
-    // &:hover {
-    //     cursor: hand;
-    // }
 
     &:hover::before {
         height: 3px;
