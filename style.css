@@ -84,6 +84,10 @@ header a {
   transition: height 0.1s ease-out;
 }
 
+.underline:hover {
+  cursor: pointer;
+}
+
 .underline:hover::before {
   height: 3px;
 }

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Normaly Commissions</title>
+        <script src = './index.js'></script>
         <link href="style.css" rel="stylesheet" type="text/css">
         <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
         
@@ -9,15 +10,15 @@
         <meta name="keywords" content="commissions, normaly, furry, VRChat">
         <meta name="author" content="Normaly">
     </head>
-    <body>
+    <body id = "body">
         <header>
             <p class="logo">
                 Normaly
             </p>
             <nav>
-                <a href="#" class="underline">About</a>
-                <a href="#work-section" class="underline">Work</a>
-                <a href="#pricing-section" class="underline">Pricing</a>
+                <a class="underline" onClick = "focusElement('body')" >About</a>
+                <a class="underline" onClick = "focusElement('work-section')">Work</a>
+                <a class="underline" onClick = "focusElement('pricing-section')">Pricing</a>
             </nav>
         </header>
         <main class="container">
@@ -57,6 +58,10 @@
                         <a href="https://discordapp.com/users/220575802868105218/" target="_blank" class="highlight">
                             <i class="fab fa-discord"></i>
                             Discord
+                        </a>
+                        <a href="https://github.com/Normaly0" target="_blank" class="highlight">  
+                            <i class="fab fa-github"></i>
+                            Github
                         </a>
                         </div>
                     </p>
@@ -171,7 +176,7 @@
             </section>
         </main>
         <footer>
-            <p>©Normaly 2021</p> 
+            <p>©Normaly 2022</p> 
          </footer>
     </body>
 </html>
